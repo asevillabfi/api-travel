@@ -40,10 +40,10 @@ const destinationQuery = ({db}) => {
     }
 
     // DELETE
-    async function deleteDestination({ destination_id}) {
+    async function deleteDestination({ destination_id }) {
         const dbs = await db();
         return dbs.query(
-            "DELETE FROM destination destination_id = $1",
+            "DELETE FROM destination WHERE destination_id = $1",
             [destination_id]
         );
     }
