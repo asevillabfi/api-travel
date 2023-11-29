@@ -1,4 +1,4 @@
-const {del} = require("express/lib/application");
+// const {del} = require("express/lib/application");
 const deleteDestination = ({ destinationdb }) => {
     return async function del({ destination_id } = {}) {
         const del = await destinationdb.deleteDestination(destination_id);
@@ -7,3 +7,4 @@ const deleteDestination = ({ destinationdb }) => {
 };
 
 module.exports = deleteDestination;
+
