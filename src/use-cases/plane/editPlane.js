@@ -11,7 +11,7 @@ const editPlane = ({ planedb }) => {
             route_id: result.getRouteId()
         });
         console.log(results.rows);
-        return results.rows
+        return results.rows;
     };
 };
 

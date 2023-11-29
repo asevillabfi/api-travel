@@ -9,7 +9,7 @@ const addPlane = ({ planedb }) => {
             plane_airline: result.getPlaneAirline(),
             route_id: result.getRouteId()
         });
-        console.log(result.rows);
+        console.log(results.rows);
         return results.rows;
     };
 };

@@ -8,7 +8,7 @@ const deletePlane = require("./deletePlane.js");
 const makePlane = require("../../entities/plane/index.js");
 
 const getPlaneUseCase = getPlane({ planedb });
-const addPlaneUseCase = addPlane({ planedb });
+const addPlaneUseCase = addPlane({ makePlane, planedb });
 const editPlaneUseCase = editPlane({ planedb });
 const deletePlaneUseCase = deletePlane({ planedb });
 
