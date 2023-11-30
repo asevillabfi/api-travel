@@ -9,5 +9,6 @@ app.use("/api", require("../src/routes/destinationRoute.js"));
 app.use("/api", require("../src/routes/planeRoute.js"));
 app.use("/api", require("../src/routes/rolesRoute.js"));
 app.use("/api", require("../src/routes/routeRoute.js"));
+app.use("/api", require("../src/routes/ticketRoute.js"));
 
 module.exports = app;
