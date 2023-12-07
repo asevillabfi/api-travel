@@ -1,27 +1,11 @@
 version: '3'
 services:
-  postgres:
-    image: postgres:15
-    ports:
-      - "5432:2345"
-    environment:
-      POSTGRES_DB: postgres
-      POSTGRES_USER: "postgres"
-      POSTGRES_PASSWORD: "Acatlover"
-    volumes:
-      - postgres_data:/var/lib/postgresql/data
-  #      - ./seed.sql:/var/lib/postgresql/seed.sql
-  #    command: sh -c "psql -U postgres -d testing < /var/lib/postgresql/seed.sql"
-
   nodejs-api:
     build:
       context: .
     ports:
-      - "5000:5001"
+      - "6000:6001"
     container_name: api-travel
     restart: always
 #    environment:
 #      HTTPS_PROXY: http://192.168.36.35:3128
-
-volumes:
-  postgres_data:
