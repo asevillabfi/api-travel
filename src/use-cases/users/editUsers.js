@@ -10,7 +10,8 @@ const editUsers = ({ usersdb }) => {
             lname: result.getLName(),
             age: result.getAge(),
             username: result.getUsername(),
-            password: result.getPassword()
+            password: result.getPassword(),
+            role_id: result.getRoleId()
         });
         console.log(results.rows);
         return results.rows;
