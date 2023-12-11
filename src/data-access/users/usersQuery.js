@@ -11,7 +11,7 @@ const usersQuery = ({db}) => {
         const dbs = await db();
         return dbs.query(
             "SELECT * FROM users, roles WHERE users.role_id = roles.role_id"
-        )
+        );
     }
 
     // POST
@@ -27,7 +27,7 @@ const usersQuery = ({db}) => {
                 info.password,
                 info.role_id,
             ]
-        )
+        );
     }
 
     // PUT
@@ -44,7 +44,7 @@ const usersQuery = ({db}) => {
                 info.role_id,
                 user_id
             ]
-        )
+        );
     }
 
     // DELETE
