@@ -1,11 +1,11 @@
 const makeUsers = require("../../entities/users/index.js");
 
 const editUsers = ({ usersdb }) => {
-    return async function put({ users_id, ...info } = {}) {
+    return async function put({ user_id, ...info } = {}) {
         const result = makeUsers(info);
 
         const results = await usersdb.editUsers({
-            user_id: users_id,
+            user_id: user_id,
             fname: result.getFName(),
             lname: result.getLName(),
             age: result.getAge(),
